@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbian Rijal Athillah - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Arbian.</div>
+            <ul class="nav-links">
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#experience">Portofolio</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <p class="greeting">Let's You Know About Me</p>
+                <h1>Hello, I'm <span class="highlight">Arbian Rijal Athillah</span></h1>
+                <p class="subtitle">Social Media Specialist & Content Creator</p>
+                
+                <div class="info-badges">
+                    <span class="badge"><i class="fas fa-map-marker-alt"></i> Bandung, Indonesia</span>
+                </div>
+                
+                <div class="description">
+                    <p>I've been hands-on in digital marketing, from building brand strategies, creating and executing TikTok & Instagram content, copywriting, and community management, to thinking through both online and offline business strategies as a whole. To me, good marketing starts from deeply understanding the business, not just making it look good on social media.</p>
+                    <p>I'm also a content creator who genuinely enjoys the process, whether it's videos, photos, or storytelling. And lately, I've developed a serious interest in AI, from generating visuals and editing with AI tools, to vibe coding my own apps. I find that AI can massively speed up the way we work and create.</p>
+                    <p>I value clear communication, real collaboration, and work that actually moves the needle.</p>
+                </div>
+                
+                <!-- Buttons removed -->
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="assets/WhatsApp%20Image%202026-06-11%20at%2016.05.13.jpeg" alt="Arbian Rijal Athillah">
+                </div>
+                <!-- Dekorasi latar belakang -->
+                <div class="blob-shape blob-1"></div>
+                <div class="blob-shape blob-2"></div>
+            </div>
+        </section>
+
+        <!-- Tools Section -->
+        <section class="tools-section" id="tools">
+            <div class="section-container">
+                <h2>Tools I Used in Daily Work</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h3><i class="fab fa-google"></i> Google tools</h3>
+                        <p>Google search, Google Meet, Google Drive, Spreadsheet, Email, Google Docs.</p>
+                    </div>
+                    <div class="tool-card">
+                        <h3><i class="fas fa-lightbulb"></i> Inspiration post</h3>
+                        <p>Pinterest, Instagram feed, TikTok search.</p>
+                    </div>
+                    <div class="tool-card">
+                        <h3><i class="fas fa-hashtag"></i> Social Media</h3>
+                        <p>Instagram, TikTok.</p>
+                    </div>
+                    <div class="tool-card">
+                        <h3><i class="fas fa-tasks"></i> Management tools</h3>
+                        <p>Notion, Google meet, Zoom, Whatsapp, Email.</p>
+                    </div>
+                    <div class="tool-card">
+                        <h3><i class="fas fa-paint-brush"></i> Design tools</h3>
+                        <p>Canva, Figma, Capcut.</p>
+                    </div>
+                    <div class="tool-card">
+                        <h3><i class="fas fa-robot"></i> AI tools</h3>
+                        <p>Chat GPT, Gemini, Claude, Flow, AIStudio, ElevenLabs, Cursor.</p>
+                    </div>
+                    <div class="tool-card">
+                        <h3><i class="fas fa-shopping-bag"></i> Online shop</h3>
+                        <p>Shopee, TiktokShop.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Experience Section -->
+        <section class="experience-section" id="experience">
+            <div class="section-container">
+                <h2>Experience</h2>
+                <div class="experience-grid">
+                    <!-- Card 1 -->
+                    <div class="experience-card" onclick="openModal('modal1')">
+                        <img src="assets/1%20(1).webp" alt="Digital Marketing Specialist" class="card-thumbnail">
+                        <h3>Digital Marketing Specialist</h3>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="experience-card" onclick="openModal('modal2')">
+                        <img src="assets/2.webp" alt="Marketing Lead" class="card-thumbnail">
+                        <h3>Marketing Lead</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Section -->
+        <section class="experience-section" id="project">
+            <div class="section-container">
+                <h2>Project</h2>
+                <div class="experience-grid">
+                    <!-- Project 1 -->
+                    <div class="experience-card" onclick="openModal('modal_proj1')">
+                        <img src="assets/image.webp" alt="Social Media Management - Kopi Ladju" class="card-thumbnail">
+                        <h3>Social Media Management - Kopi Ladju</h3>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="experience-card" onclick="openModal('modal_proj2')">
+                        <img src="assets/image%20(1).webp" alt="Social Media Management - Berkemah" class="card-thumbnail">
+                        <h3>Social Media Management - Berkemah</h3>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="experience-card" onclick="openModal('modal_proj3')">
+                        <img src="assets/image%20(2).webp" alt="AI Content Creation" class="card-thumbnail">
+                        <h3>AI Content Creation</h3>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="experience-card" onclick="openModal('modal_proj4')">
+                        <img src="assets/image%20(3).webp" alt="Content Creator Collaboration" class="card-thumbnail">
+                        <h3>Content Creator Collaboration</h3>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="experience-card" onclick="openModal('modal_proj5')">
+                        <img src="assets/image%20(4).webp" alt="Vibe Coding" class="card-thumbnail">
+                        <h3>Vibe Coding - Google Developer Groups</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modals for Experience -->
+        <div id="modal1" class="modal-overlay" onclick="closeModal('modal1')">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="closeModal('modal1')">&times;</button>
+                <div class="modal-header">
+                    <img src="assets/1%20(1).webp" alt="Cover" class="modal-cover-img">
+                    <h3>Digital Marketing Specialist</h3>
+                </div>
+                <div class="exp-header-info">
+                    <h4>Kopi Ladju</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Bandung, Indonesia</p>
+                    <p><i class="far fa-calendar-alt"></i> August 1, 2025 &rarr; October 31, 2025</p>
+                    <p><i class="fas fa-briefcase"></i> Contract - Hybrid</p>
+                </div>
+                
+                <div class="exp-block">
+                    <h4>Overview</h4>
+                    <p>Built and managed the cafe social media presence from the ground up. Handled content creation, video editing, and copywriting for Instagram & Tiktok. Ran TikTok Ads to boost reach and organized a brand activation running event to drive offline engagement. Monitored analytics regularly to evaluate content performance and adjust strategy.</p>
+                </div>
+                <div class="exp-block">
+                    <h4>Skills</h4>
+                    <ul class="tag-list">
+                        <li>Business Strategy</li>
+                        <li>Content Marketing</li>
+                        <li>Content Strategy</li>
+                        <li>Copywriting</li>
+                        <li>Social Media</li>
+                        <li>Video Editing</li>
+                        <li>Marketing Strategy</li>
+                        <li>Digital Marketing</li>
+                        <li>Social Media Marketing</li>
+                    </ul>
+                </div>
+                <div class="exp-block">
+                    <h4>Tools I Use to This Position</h4>
+                    <ul class="tag-list tools-tag">
+                        <li>Canva</li>
+                        <li>Capcut</li>
+                        <li>ChatGPT</li>
+                        <li>Spreadsheet</li>
+                        <li>Google Drive</li>
+                        <li>Email</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal2" class="modal-overlay" onclick="closeModal('modal2')">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="closeModal('modal2')">&times;</button>
+                <div class="modal-header">
+                    <img src="assets/2.webp" alt="Cover" class="modal-cover-img">
+                    <h3>Marketing Lead</h3>
+                </div>
+                <div class="exp-block">
+                    <h4>Overview</h4>
+                    <p>Took on the Marketing Lead role at a early stage digital agency. Managed the agency's Instagram and TikTok accounts, overseeing content strategy and scheduling. Led an affiliate team to expand reach and drive traffic. Organized and promoted a paid online class, running Meta Ads to drive registrations.</p>
+                </div>
+                <div class="exp-block">
+                    <h4>Skills</h4>
+                    <ul class="tag-list">
+                        <li>Community Management</li>
+                        <li>Brand Development</li>
+                        <li>Content Strategy</li>
+                        <li>Social Media Marketing</li>
+                        <li>Digital Marketing</li>
+                        <li>Affiliate Marketing</li>
+                        <li>Meta ads</li>
+                        <li>Event Marketing</li>
+                    </ul>
+                </div>
+                <div class="exp-block">
+                    <h4>Tools I Use in This Position</h4>
+                    <ul class="tag-list tools-tag">
+                        <li>Capcut</li>
+                        <li>Notion</li>
+                        <li>Spreadsheet</li>
+                        <li>Meta Ads</li>
+                        <li>Google Meet</li>
+                        <li>Zoom</li>
+                        <li>Google Search</li>
+                        <li>Email</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals for Projects -->
+        <div id="modal_proj1" class="modal-overlay" onclick="closeModal('modal_proj1')">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="closeModal('modal_proj1')">&times;</button>
+                <div class="modal-header">
+                    <img src="assets/image.webp" alt="Cover" class="modal-cover-img">
+                    <h3>Social Media Management - Kopi Ladju</h3>
+                </div>
+                
+                <div class="exp-block">
+                    <h4>Overview</h4>
+                    <p>Kopi Ladju is a cafe based in Bandung, West Java. As a Digital Marketing Specialist, I was responsible for building and managing their entire social media presence from scratch, covering content creation, video editing, copywriting, paid ads, brand activation events and monitored analytics.</p>
+                </div>
+                <div class="exp-block">
+                    <h4>Tools</h4>
+                    <ul class="tag-list tools-tag">
+                        <li>Canva</li>
+                        <li>Capcut</li>
+                        <li>ChatGPT</li>
+                        <li>Spreadsheet</li>
+                        <li>Google Drive</li>
+                    </ul>
+                </div>
+                <div class="exp-block">
+                    <h4>Link of Brand Social Media</h4>
+                    <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="https://www.instagram.com/kopiladju?igsh=MTk2aG9kbnBsMnF6eA==" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="https://www.tiktok.com/@kopiladju?_r=1&_t=ZS-97bzl2gkQxb" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fab fa-tiktok"></i> TikTok</a>
+                    </div>
+                </div>
+                <div class="exp-block">
+                    <h4>Instagram Engagement</h4>
+                    <div class="image-gallery">
+                        <img src="assets/WhatsApp%20Image%202026-06-27%20at%2012.03.05.jpeg.png" alt="Instagram 1">
+                        <img src="assets/WhatsApp%20Image%202026-06-27%20at%2012.03.06%20(1).jpeg.png" alt="Instagram 2">
+                        <img src="assets/WhatsApp%20Image%202026-06-27%20at%2012.03.06%20(2).jpeg.png" alt="Instagram 3">
+                        <img src="assets/WhatsApp%20Image%202026-06-27%20at%2012.03.06.jpeg.png" alt="Instagram 4">
+                    </div>
+                </div>
+                <div class="exp-block">
+                    <h4>Tiktok Engagement</h4>
+                    <div class="image-gallery">
+                        <img src="assets/WhatsApp%20Image%202026-06-27%20at%2012.03.04.jpeg.png" alt="Tiktok 1">
+                        <img src="assets/WhatsApp%20Image%202026-06-27%20at%2012.03.05%20(1).jpeg.png" alt="Tiktok 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal_proj2" class="modal-overlay" onclick="closeModal('modal_proj2')">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="closeModal('modal_proj2')">&times;</button>
+                <div class="modal-header">
+                    <img src="assets/image%20(1).webp" alt="Cover" class="modal-cover-img">
+                    <h3>Social Media Management - Berkemah</h3>
+                </div>
+                
+                <div class="exp-block">
+                    <h4>Overview</h4>
+                    <p>BERKEMAH is an early-stage digital agency based in Bandung, Indonesia. As Chief Marketing Officer, I managed the agency's Instagram and TikTok accounts, overseeing content strategy, scheduling, and community management to grow their online presence and support business objectives.</p>
+                </div>
+                <div class="exp-block">
+                    <h4>Tools</h4>
+                    <ul class="tag-list tools-tag">
+                        <li>Canva</li>
+                        <li>Capcut</li>
+                        <li>ChatGPT</li>
+                        <li>Spreadsheet</li>
+                        <li>Google Drive</li>
+                        <li>Meta ADS</li>
+                    </ul>
+                </div>
+                <div class="exp-block">
+                    <h4>Instagram Feed</h4>
+                    <div class="image-gallery">
+                        <img src="assets/WhatsApp%20Image%202026-06-27%20at%2018.22.43.jpeg.png" alt="IG Feed 1">
+                        <img src="assets/WhatsApp%20Image%202026-06-27%20at%2018.22.44.jpeg.png" alt="IG Feed 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal_proj3" class="modal-overlay" onclick="closeModal('modal_proj3')">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="closeModal('modal_proj3')">&times;</button>
+                <div class="modal-header">
+                    <img src="assets/image%20(2).webp" alt="Cover" class="modal-cover-img">
+                    <h3>AI Content Creation</h3>
+                </div>
+                
+                <div class="exp-block">
+                    <h4>Overview</h4>
+                    <p>I've been experimenting with AI tools to create content, generating images through Gemini and producing videos using Flow and Grok. Started from a real need: promoting jersey products and making video openings for vibecoding content. Turns out AI makes the whole process way faster without sacrificing the creative side.</p>
+                </div>
+                <div class="exp-block">
+                    <h4>Tools</h4>
+                    <ul class="tag-list tools-tag">
+                        <li>Gemini</li>
+                        <li>Flow</li>
+                        <li>Grok</li>
+                        <li>ElevenLabs</li>
+                        <li>CapCut</li>
+                    </ul>
+                </div>
+                <div class="exp-block">
+                    <h4>What I Created</h4>
+                    <ul style="color: var(--text-muted); padding-left: 1.5rem; line-height: 1.6;">
+                        <li>AI-generated images & video content for jersey product promotion</li>
+                        <li>AI-generated images & video openings for vibecoding series</li>
+                        <li>AI-generated images for prompt selling</li>
+                    </ul>
+                </div>
+                
+                <div class="exp-block">
+                    <h4>Jersey Product Promotion</h4>
+                    <div class="image-gallery">
+                        <img src="assets/WhatsApp%20Image%202026-06-29%20at%2021.41.52.jpeg" alt="Jersey 1">
+                        <img src="assets/WhatsApp%20Image%202026-06-29%20at%2021.41.51.jpeg.png" alt="Jersey 2">
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://drive.google.com/file/d/1MfZyrqyMhYcrcbnGC2UP7WgzfGjUTm9A/view" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fas fa-play"></i> Video Generate ></a>
+                    </div>
+                </div>
+                
+                <div class="exp-block">
+                    <h4>Opening Vibecoding Series</h4>
+                    <div class="image-gallery">
+                        <img src="assets/WhatsApp%20Image%202026-06-29%20at%2021.42.42%20(1).jpeg" alt="Opening Vibecoding">
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://drive.google.com/file/d/1poevO-y-X8hL6Y6FZn0WpOimwEOhmfQx/view" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fas fa-play"></i> Video Generate ></a>
+                    </div>
+                </div>
+                
+                <div class="exp-block">
+                    <h4>Prompt Selling</h4>
+                    <div class="image-gallery">
+                        <img src="assets/Gemini_Generated_Image_.png" alt="Prompt 1">
+                        <img src="assets/Gemini_Generated_Image_%20(1).png" alt="Prompt 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal_proj4" class="modal-overlay" onclick="closeModal('modal_proj4')">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="closeModal('modal_proj4')">&times;</button>
+                <div class="modal-header">
+                    <img src="assets/image%20(3).webp" alt="Cover" class="modal-cover-img">
+                    <h3>Content Creator Collaboration</h3>
+                </div>
+                
+                <div class="exp-block">
+                    <h4>Overview</h4>
+                    <p>I've had the chance to collaborate with different brands and events as a content creator, making promotional content through social media. From helping a local cafe get more visibility to promoting a live concert event where I hit the target and got complimentary tickets in return. Also actively creating my own TikTok content as a way to keep experimenting and stay sharp.</p>
+                </div>
+                <div class="exp-block">
+                    <h4>Collaboration</h4>
+                    <div style="margin-bottom: 1.5rem;">
+                        <h5 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.05rem;">Kopi Layung</h5>
+                        <p style="color: var(--text-muted);">Created and published promotional content for a local cafe in Bandung to drive awareness and foot traffic.</p>
+                        <a href="https://www.tiktok.com/@_aratt/video/7269281392943549702?_r=1&_t=ZS-97cQXOFactO" target="_blank" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.9rem; margin-top: 0.5rem;"><i class="fab fa-tiktok"></i> Watch on TikTok</a>
+                    </div>
+                    <div>
+                        <h5 style="color: var(--text-main); margin-bottom: 0.5rem; font-size: 1.05rem;">Tau Tau Festival</h5>
+                        <p style="color: var(--text-muted);">Produced social media content to boost event awareness, successfully hitting reach targets in exchange for complimentary tickets.</p>
+                        <a href="https://www.tiktok.com/@_aratt/photo/7203627829760675098?_r=1&_t=ZS-97cQYDSCgfo" target="_blank" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.9rem; margin-top: 0.5rem;"><i class="fab fa-tiktok"></i> Watch on TikTok</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal_proj5" class="modal-overlay" onclick="closeModal('modal_proj5')">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <button class="close-btn" onclick="closeModal('modal_proj5')">&times;</button>
+                <div class="modal-header">
+                    <img src="assets/image%20(4).webp" alt="Cover" class="modal-cover-img">
+                    <h3>Vibe Coding - Google Developer Groups</h3>
+                </div>
+                <div class="exp-header-info">
+                    <p><i class="fas fa-trophy"></i> Juara Vibe Coding - Google Developer Groups</p>
+                </div>
+                
+                <div class="exp-block">
+                    <h4>Overview</h4>
+                    <p>Joined a vibecoding competition hosted by Google, building a web project using AI Studio as the main development tool. Although didn't place in the top rankings, the experience gave hands-on exposure to AI-assisted development and modern no-code/low-code workflows. Received an official certificate of participation from Google.</p>
+                </div>
+                <div class="exp-block">
+                    <h4>Tools</h4>
+                    <ul class="tag-list tools-tag">
+                        <li>Google AIStudio</li>
+                    </ul>
+                </div>
+                <div class="exp-block">
+                    <h4>Links & Certificate</h4>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                        <a href="https://www.tiktok.com/@_aratt/video/7644544830193880338?_r=1&_t=ZS-97cQ90BXT2m" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 1rem;"><i class="fab fa-tiktok"></i> Project Video</a>
+                        <a href="assets/Certificate.pdf" target="_blank" class="btn btn-primary" style="padding: 0.5rem 1rem;"><i class="fas fa-file-pdf"></i> View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="experience-section" id="contact">
+            <div class="section-container" style="text-align: center; max-width: 600px; margin: 0 auto; padding: 4rem 0;">
+                <h2 style="text-align: center; margin-bottom: 1.5rem;">Kontak Saya</h2>
+                <p style="color: var(--text-muted); margin-bottom: 2.5rem;">Tertarik untuk berkolaborasi atau memiliki pertanyaan? Jangan ragu untuk menghubungi saya melalui:</p>
+                
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <a href="mailto:arbianathillah@gmail.com" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <span>arbianathillah@gmail.com</span>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/arbianrra/" target="_blank" class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <span>Arbian Rijal Athillah</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Arbian Rijal Athillah. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html>
