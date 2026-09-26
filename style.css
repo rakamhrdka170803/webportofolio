@@ -635,4 +635,28 @@ footer {
         width: 250px;
         height: 250px;
     }
+
+    .modal-content {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    .modal-cover-img {
+        height: 200px;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .close-btn {
+        top: 0.5rem;
+        right: 1rem;
+        font-size: 2rem;
+    }
+
+    .contact-card span {
+        font-size: 1rem;
+        word-break: break-all;
+    }
 }
