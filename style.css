@@ -35,18 +35,11 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 1.5rem 5%;
+    padding: 1rem 5%;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    letter-spacing: -0.5px;
 }
 
 .nav-links {
@@ -298,7 +291,7 @@ body {
 
 .tools-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
@@ -344,7 +337,7 @@ body {
 
 .experience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2.5rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -621,11 +614,12 @@ footer {
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none;
+        gap: 1rem;
+        font-size: 0.85rem;
     }
     
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .info-badges {
@@ -633,7 +627,12 @@ footer {
         gap: 0.8rem;
     }
     
-    .tools-section h2 {
+    .tools-section h2, .experience-section h2 {
         font-size: 2rem;
+    }
+
+    .image-wrapper {
+        width: 250px;
+        height: 250px;
     }
 }
